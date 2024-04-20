@@ -1,6 +1,5 @@
 package com.mptechprojects.lab3_20193733;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -11,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.mptechprojects.lab3_20193733.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class PrimeNumbersActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
@@ -22,14 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        binding.btnStart.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, PrimeNumbersActivity.class);
-            startActivity(intent);
-        });
-
-        binding.btnSearch.setOnClickListener(v -> {
-        });
 
 
     }
