@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.mptechprojects.lab3_20193733.databinding.ActivityMainBinding;
 
-public class PrimeNumbersActivity extends AppCompatActivity {
+public class FilmsActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
@@ -23,7 +23,7 @@ public class PrimeNumbersActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Toast.makeText(this, "Prime Numbers Activity", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Films Activity", Toast.LENGTH_LONG).show();
 
 
     }
