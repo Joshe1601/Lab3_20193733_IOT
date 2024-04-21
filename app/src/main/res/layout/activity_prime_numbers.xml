@@ -41,9 +41,10 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp">
             <TextView
+                android:id="@+id/viewPrimeNumber"
                 android:layout_width="110dp"
                 android:layout_height="80dp"
-                android:text="999"
+                android:text=""
                 android:textAlignment="center"
                 android:textSize="40sp"
                 android:padding="10dp"
