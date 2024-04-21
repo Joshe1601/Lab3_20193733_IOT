@@ -204,7 +204,7 @@
                     android:background="@drawable/shape_film_detail">
 
                         <TextView
-                            android:id="@+id/aboutText"
+                            android:id="@+id/plot"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text=""
@@ -349,7 +349,7 @@
             android:text="Estás de acuerdo con la información brindada"/>
 
         <Button
-            android:id="@+id/button_calculator"
+            android:id="@+id/backButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

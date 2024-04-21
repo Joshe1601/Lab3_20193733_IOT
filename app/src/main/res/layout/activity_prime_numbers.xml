@@ -42,7 +42,7 @@
             android:layout_marginTop="10dp">
             <TextView
                 android:id="@+id/viewPrimeNumber"
-                android:layout_width="110dp"
+                android:layout_width="140dp"
                 android:layout_height="80dp"
                 android:text=""
                 android:textAlignment="center"
@@ -75,17 +75,19 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Buscador de películas"
-                    android:padding="5dp"
                     android:layout_margin="10dp"
-                    android:textSize="15sp"
+                    android:background="@drawable/shape_title"
+                    android:padding="5dp"
+                    android:text="Ascender/Descender"
                     android:textColor="@color/white"
-                    android:background="@drawable/shape_title">
+                    android:textSize="15sp">
 
                 </TextView>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -105,7 +107,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Buscador de películas"
+                    android:text="Pausar/reiniciar"
                     android:padding="5dp"
                     android:layout_margin="10dp"
                     android:textSize="15sp"

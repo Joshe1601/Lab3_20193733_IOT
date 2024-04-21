@@ -44,7 +44,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.btnSearch.setOnClickListener(v -> {
+            String searchText = binding.etSearch.getText().toString();
+
+            binding.etSearch.getText().clear();
             Intent intent = new Intent(MainActivity.this, FilmsActivity.class);
+            intent.putExtra("search", searchText);
             startActivity(intent);
         });
 
