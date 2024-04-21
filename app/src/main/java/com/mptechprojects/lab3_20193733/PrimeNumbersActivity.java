@@ -10,17 +10,17 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.mptechprojects.lab3_20193733.databinding.ActivityMainBinding;
+import com.mptechprojects.lab3_20193733.databinding.ActivityPrimeNumbersBinding;
 
 public class PrimeNumbersActivity extends AppCompatActivity {
 
-    ActivityMainBinding binding;
+    ActivityPrimeNumbersBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityPrimeNumbersBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         Toast.makeText(this, "Prime Numbers Activity", Toast.LENGTH_LONG).show();

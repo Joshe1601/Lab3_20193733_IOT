@@ -5,6 +5,173 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrimeNumbersActivity">
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/abMain"
+        layout="@layout/ab_prime_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/titlePrimeNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/abMain">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Su número primo es"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_title">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:text="999"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_film_detail">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/titlePrimeNumbers">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buscador de películas"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_title">
+
+                </TextView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Descender"
+                    android:id="@+id/btnUpDown"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_button">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buscador de películas"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_title">
+
+                </TextView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Pausa"
+                    android:id="@+id/btnPauseRestart"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_button">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actualmente el contador está en: "
+                android:textSize="15sp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearButtons">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Orden del Primo"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="Buscar"
+            android:textColor="@color/white">
+
+        </Button>
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

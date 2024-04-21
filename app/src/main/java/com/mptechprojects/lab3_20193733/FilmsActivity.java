@@ -9,18 +9,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.mptechprojects.lab3_20193733.databinding.ActivityFilmsBinding;
 import com.mptechprojects.lab3_20193733.databinding.ActivityMainBinding;
 
 public class FilmsActivity extends AppCompatActivity {
 
-    ActivityMainBinding binding;
+    ActivityFilmsBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityFilmsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         Toast.makeText(this, "Films Activity", Toast.LENGTH_LONG).show();
